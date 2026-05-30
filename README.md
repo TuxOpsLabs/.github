@@ -2,7 +2,7 @@
 
 <p align="center">
   <!-- Replace when logo is available -->
-  <img src="assets/3354BFC8-2287-48B1-9EE3-331495046FDE.png" width="220" alt="TuxOps Logo">
+  <img src="assets/img/3354BFC8-2287-48B1-9EE3-331495046FDE.png" width="220" alt="TuxOps Logo">
 </p>
 
 <p align="center">
