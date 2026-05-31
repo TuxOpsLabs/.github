@@ -1,0 +1,32 @@
+name: Repository Health
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required files
+        run: |
+          set -e
+
+          test -f profile/README.md
+          test -f SECURITY.md
+          test -f CONTRIBUTING.md
+          test -f CODE_OF_CONDUCT.md
+          test -f SUPPORT.md
+
+          echo "All required files exist."
+
+      - name: Verify assets directory
+        run: |
+          test -d profile/assets
+          echo "Assets directory exists."
